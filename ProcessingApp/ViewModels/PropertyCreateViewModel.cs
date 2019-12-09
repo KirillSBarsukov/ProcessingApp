@@ -11,6 +11,7 @@ namespace ProcessingApp.ViewModels
     public class PropertyCreateViewModel
     {
 
+        //Just a test
            // Key1
         [Key]
         public virtual int PropertyId { get; set; }
@@ -40,13 +41,8 @@ namespace ProcessingApp.ViewModels
         [Required]
         public virtual String City { get; set; }
 
-
-
         [Display(Name = "Upload File")]
-       // public virtual String ImageUrl { get; set; }
-
         public IFormFile Image { get; set; }
-
 
         // Owner
         public virtual OwnerModel Owner { get; set; }
